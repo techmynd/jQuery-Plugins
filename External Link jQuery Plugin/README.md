@@ -31,12 +31,19 @@ $("#anyID").mjqexlinks();
 ## Initialize with Options
 
 $(document).ready(function() {
-    $('body').mjqexlinks({
-        target: "_blank",		// Default is _blank 
-        className: "external",	// class name of your choice // comment line if you don't want to use it
-        nofollow: true,			// use rel="nofollow" // true or flase
-        external: false			// use rel="external" // true or flase
-    });
+
+$('body').mjqexlinks({
+
+target: "_blank",		// Default is _blank 
+
+className: "external",	// class name of your choice // comment line if you don't want to use it
+
+nofollow: true,			// use rel="nofollow" // true or flase
+
+external: false			// use rel="external" // true or flase
+
+});
+
 });
 
 - If you want to apply this to whole webpage use body selector like below:
