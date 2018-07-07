@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>mjqExLinks Demo</title>
+	<link rel="stylesheet" type="text/css" href="vendors/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<br><br>
+	
+	<div class="container">
+
+		<h4>mjqExLinks jQuery Plugin</h4>
+
+		<p><strong>Description:</strong> Process external links of website and apply rel="nofollow", specific class and more to only external links. This improves SEO for a website. Inspect the links below and see external links have got the required attributes. Plugin initialization code is at the bottom.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="secondpage.html">Page No.2 / Same site link</a> Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor sit amet, <a href="http://www.msn.com">MSN</a> consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor <a href="http://www.javedkhalil.com">Javed Khalil Site</a>, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="http://www.yahoo.com">Yahoo</a> Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde? <a href="thiredpage.html">Page No.3 / Same site link</a></p>
+		
+	</div>
+
+	<br><br>
+
+	<script type="text/javascript" src="vendors/jQuery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/mjqExLinks.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+		    
+		    // Default initialization // uncomment below line
+		    // $("body").mjqexlinks();
+
+		    // initialization with settings
+		    $("body").mjqexlinks({
+		        target: "_blank",		// use target="_blank" on external links // default enabled 
+		        className: "external",	// Apply unique class to external links // comment line if you don't want to use it
+		        nofollow: true,			// use rel="nofollow" // true or flase
+		        external: false			// use rel="external" // true or flase
+		    });
+
+		});
+	</script>
+
+</body>
+</html>
