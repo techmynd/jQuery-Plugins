@@ -8,24 +8,27 @@ mjqExLinks can be used to open external links in new window and apply optional a
 
 For **documentation**, usage, and examples, download and open index file in web browser.
 
-### How To Use
+## How To Use
 
 Use files from dist folder. 
 
 Call mjqExLinks.min.js below jQuery script and initialize the plugin like below:
 
-Default initialization
+### Default initialization
 
 $(document).ready(function() {
 	$("body").mjqexlinks();
 });
 
 or
+
 $(".YourClass").mjqexlinks();
+
 or
+
 $("#anyID").mjqexlinks();
 
-Initialize with Options
+## Initialize with Options
 
 $(document).ready(function() {
     $('body').mjqexlinks({
@@ -37,7 +40,7 @@ $(document).ready(function() {
 });
 
 - If you want to apply this to whole webpage use body selector like below:
-$('body').mjqexlinks({ ... options ... });
+- $('body').mjqexlinks({ ... options ... });
 - If you do not want to use nofollow or external attributes, change true to false
 - target: '_blank', you can use any target, this plugin does not restrict you to use only target _blank
 
