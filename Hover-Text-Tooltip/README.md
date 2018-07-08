@@ -2,6 +2,8 @@
 
 Show a customizable moving tooltip over any element (e.g. images, paragraphs, form fields). You can have as many different tooltips as you like. You can initialize this tooltip at different elements with different class. The tooltip text is in element attribute tip-text="your tooltip text here". .mjqtip is the class that is being used to initialize the tooltip on elements in example. You can initialize it on any other class of ID and give it seperate class to change the styles.
 
+- Demo: https://javedkhalil.com/jquery-plugins/Hover-Text-Tooltip/
+
 - Dependency: jQuery
 - jQuery Support: jquery 1.12.4+
 - Web Browsers Support: All
