@@ -31,7 +31,7 @@ $("#anyID").mjqhovertip();
 
 $(document).ready(function() {
 
-$('body').mjqhovertip({
+$('.yourElementClass').mjqhovertip({
 
 className: ""	// class name of your choice // default is empty
 
