@@ -82,6 +82,7 @@ Benefits: Improves Website SEO
 			}			
 		}
 
+		return this; // allow jQuery chaining
 
     };
  
