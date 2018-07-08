@@ -1,0 +1,99 @@
+<!--
+jQuery Plugin
+Plugin Name: mjqHoverToolTip 
+Author: Muhammad Javed Khalil
+Website: https://www.javedkhalil.com
+Description: Show a customizable moving tooltip over any element (e.g. images, paragraphs, form fields).
+Use Case: Form fields, images, text can have their own unique tooltips to provide more information about the related area
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>mjqHoverToolTip Demo</title>
+	<link rel="stylesheet" type="text/css" href="vendors/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+</head>
+<body>
+	
+	<br><br>
+	
+	<div class="container">
+
+		<h4>mjqHoverToolTip jQuery Plugin</h4>
+		<br>
+
+		<p><strong>Description:</strong> Show a customizable (with unique class) moving tooltip over any element (e.g. images, paragraphs, form fields). Hover over the paragraph and images and below and watch the effect. You can have as many different tooltips as you like. You can initialize this tooltip at different elements with different class. The tooltip text is in element attribute <strong>tip-text="your tooltip text here"</strong> .mjqtip is the class that is being used to initialize the tooltip on elements. You can initialize it on any other class of ID and give it seperate class to change the styles.</p>
+
+		<p class="mjqtip" tip-text="the unique text over paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img src="assets/images/1.jpeg" tip-text="Watching sunset scene" class="d-auto img-fluid mjqtip">
+				<p class="text-center">This image has the default tooltip.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="assets/images/2.jpg" tip-text="Cool sunset, heart, love" class="d-auto img-fluid mjqtip2">
+				<p class="text-center">This image has the tooltip with different class for different styles</p>
+			</div>
+			<div class="col-md-4">
+				<img src="assets/images/2.jpg" tip-text="Sunset and making cool heart shape" class="d-auto img-fluid mjqtip3">
+				<p class="text-center">This image has the tooltip with another class for different styles</p>
+			</div>
+		</div>
+		
+
+		<br><br>
+	    <h5>Default Initialization</h5>
+<textarea class="form-control" rows="4">
+$(document).ready(function() {
+	$(".mjqtip").mjqhovertip();
+});
+</textarea>
+
+		<br><br>
+	    <h5>Initialize With Options</h5>
+<textarea class="form-control" rows="7">
+$(document).ready(function() {
+	$(".mjqtip").mjqhovertip({
+        className: ""
+	});	
+});
+</textarea>
+<br><br>
+
+<p>Change .mjqtip to any class or ID where you want this plugin to work its magic. And add unique class to it and change the styles from css file.</p>
+		
+	</div>
+
+	<br><br>
+
+	<script type="text/javascript" src="vendors/jQuery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/mjqHoverToolTip.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+		    
+		    // Default initialization // uncomment below line
+		    // $(".mjqtip").mjqhovertip();
+
+		    // initialization with settings
+		    $(".mjqtip").mjqhovertip({
+		        className: ""	// unique class to change appearance for this tooltip // default is blank
+			});
+
+			$(".mjqtip2").mjqhovertip({
+		        className: "second-tip"	// unique class to change appearance for this tooltip
+			});
+
+			$(".mjqtip3").mjqhovertip({
+		        className: "third-tip" // unique class to change appearance for this tooltip
+			});
+
+		});
+	</script>
+
+</body>
+</html>
