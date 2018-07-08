@@ -30,6 +30,30 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="http://www.yahoo.com">Yahoo</a> Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde?</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente ipsum iure nesciunt quam sunt consequatur ullam suscipit facere. Quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid accusantium quidem nostrum debitis nobis, quae, recusandae voluptatum a id harum optio quam quis eum illum dolorem. Deleniti aliquid aperiam iste quibusdam. Velit, cupiditate in id sit adipisci, repudiandae perferendis et sapiente dicta nisi nobis voluptatibus provident minus ea unde? <a href="thiredpage.html">Page No.3 / Same site link</a></p>
+
+		<br><br>
+	    <h5>Default Initialization</h5>
+<textarea class="form-control" rows="4">
+$(document).ready(function() {
+	$("body").mjqexlinks();
+});
+</textarea>
+
+		<br><br>
+	    <h5>Initialize With Options</h5>
+<textarea class="form-control" rows="7">
+$(document).ready(function() {
+	$("body").mjqexlinks({
+	    target: "_blank",
+	    className: "external",
+	    nofollow: true,
+	    external: false
+	});	
+});
+</textarea>
+<br><br>
+
+<p>Change body to any class or ID where you want this plugin to work its magic. View source of this page for more help.</p>
 		
 	</div>
 
