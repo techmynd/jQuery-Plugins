@@ -1,6 +1,6 @@
 # mjqExLinks
 
-mjqExLinks can be used to open external links in new window and apply optional attributes to external links such as rel (external, nofollow). Apply at whole web page or any section of webpage.
+mjqExLinks can be used to open external links in new window and apply optional attributes to external links such as rel (external, nofollow). Apply at whole web page or any section of webpage. You can also add unique class to all external links.
 
 - Dependency: jQuery
 - jQuery Support: jquery 1.12.4+
